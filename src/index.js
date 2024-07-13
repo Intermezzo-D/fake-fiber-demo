@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App"
+// import App from "./App"
 
 let root = createRoot(document.getElementById("root"))
 // root.render(<App />)
@@ -26,6 +26,7 @@ let nextUnitOfWork = workInProgressRoot;
 const INSERT = "INSERT"
 const DELETE = "DELETE"
 const UPDATE = "UPDATE"
+const ELEMENT_TEXT = "ELEMENT_TEXT" // need further definition, I defind this just wanna eliminate error
 
 // create fiber node for each vitrualDOM element
 function beginWork(workInProgressFiber) {
